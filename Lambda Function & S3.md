@@ -26,6 +26,7 @@
 2. Past the code from `threat_detector.py` and replace example code for the function.
    - Depending on the complexity of the script, might need to increase "timeout" value so the function can fully execute before AWS force stop the function 
      - Configuration → Edit → Timeout → adjust value if needed
+3. Click Deploy to update code
 
 ### 4. Add Layer for Dependences
 
@@ -76,8 +77,9 @@
 
 3. Select "Custom layers" and select the global layer: `threat-detection-layer-dependences`
 
-4. Select version 1 (might be only choice) and click "Add"
+4. Select version 
 
+5. Click "Add"
 
 
 
