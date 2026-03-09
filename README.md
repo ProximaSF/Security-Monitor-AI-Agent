@@ -95,7 +95,7 @@ There are 3 global variables: `WEBHOOK_URL`, `FAILED_ATTEMPT_THRESHOLD` & `TIME_
 
 Sends a detected threat (log message, type, and severity) to AWS Bedrock's Claude model and asks it to analyze the threat. It returns a JSON response containing a summary, likely attack type, recommended action, and extracted IP address.
 
-- Minor AI written codes: try-except
+- Minor contain AI written codes: try-except
 
 ### webhook_embed():
 
@@ -123,13 +123,13 @@ The main AWS Lambda handler that decodes and decompresses incoming CloudWatch lo
 
 ## Possible Future Improvement Check List
 
-- [x]  Integrate Bedrock for custom AI response
-- [x]  Add more threat detection conditions/logic
-- [x]  Optimize script for AI agent
-- [ ]  Automatically block IP Address after # failed attempts
-- [ ]  Store Lambda result to S3 
+- [x] Integrate Bedrock for custom AI response
+- [x] Add more threat detection conditions/logic
+- [x] Optimize script for AI agent
+- [ ] Automatically block IP Address after # failed attempts
+- [ ] Store Lambda result to S3 
 - [ ] Integrate SSM for convince and security
 - [ ] Add more lambda functions for other purpose
 - [ ] Provide instruction/process how to install dependences without using S3
-- [ ]  Land a job :D
+- [ ] Land a job :D
 
