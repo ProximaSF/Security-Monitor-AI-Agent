@@ -20,6 +20,7 @@ A diagram to illustrate how the AI Agent is structured using various AWS service
 Note: The instance image I used is Ubuntu. Thus, the process of installing AWS CLI or the CloudWatch agent is a bit different: requires downloading a package first (.deb). Additionally, instead of `yum`, it's `apt` to install packages.
 
 <hr>
+
 ## Terminologies:
 
 <u>CloudWatch</u> is a service that collects monitoring data from servers/apps. There are 4 services it provides: Logs (text output from applications/systems), metrics (numerical data (CPU %, disk usage, request counts)), events (alerts/triggers (when something happens)) and dashboards, a visual monitoring. 
