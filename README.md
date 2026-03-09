@@ -14,6 +14,9 @@ This project is to experiment and understand AWS services; CloudWatch, Lambda Fu
 
 The first thing I started with was experimenting with and learning about CloudWatch Agent. After I set up a log group and stream that connects my EC2 instance to the AWS CloudWatch management console, I then moved on to Lambda functions. This service can trigger a script when a log file updates. The script reads the file and then searches for patterns for security concerns. If a pattern is detected, it calls Bedrock to ask the AI to generate a summary and other information in JSON format, which will be used as a message to send to a Discord channel via a webhook URL. During the process, I also learned about S3, which I used to store Python dependencies for the script to run. Below is a diagram to illustrate how each service is connected. Lastly, I have also attached three Markdown documents for the setup process for each service, besides Bedrock.
 
+<img src="AWS_AI_Agent_Flow.png" alt="AI Agent Flow Diagram" style="width: 400px; height: 300px;">
+
+A diagram to illustrate how the AI Agent is structured using various AWS services as for 3/9/26. 
 
 
 1. [CloudWatch](CloudWatch.md): Documentation how I setup CloudWatch on Ubuntu and AWS console
@@ -22,7 +25,6 @@ The first thing I started with was experimenting with and learning about CloudWa
 
 3. [Lambda Function & S3](Lambda_Function_&_S3.md): Documentation how I setup Lambda Function and S3 to work with CloudWatch
 
-   
 
 Note: The instance image I used is Ubuntu. Thus, the process of installing AWS CLI or the CloudWatch agent is a bit different: requires downloading a package first (.deb). Additionally, instead of `yum`, it's `apt` to install packages.  
 
@@ -36,5 +38,5 @@ Note: The instance image I used is Ubuntu. Thus, the process of installing AWS C
 - [ ] Integrate SSM for convince and security
 - [ ] Add more lambda functions for other purpose
 - [ ] Provide instruction/process how to install dependences without using S3
-- [ ]  Land a job :/
+- [ ]  Land a job :D
 
