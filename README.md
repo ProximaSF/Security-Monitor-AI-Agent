@@ -16,7 +16,7 @@ The first thing I started with was experimenting with and learning about CloudWa
 
 <img src="AWS_AI_Agent_Flow.png" alt="AI Agent Flow Diagram" style="width: 400px; height: 300px;">
 
-A diagram to illustrate how the AI Agent is structured using various AWS services as for 3/9/26. 
+A diagram to illustrate how the AI Agent is structured using various AWS services as of 3/9/26. 
 
 
 1. [CloudWatch](CloudWatch.md): Documentation how I setup CloudWatch on Ubuntu and AWS console
