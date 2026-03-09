@@ -95,6 +95,8 @@ There are 3 global variables: `WEBHOOK_URL`, `FAILED_ATTEMPT_THRESHOLD` & `TIME_
 
 Sends a detected threat (log message, type, and severity) to AWS Bedrock's Claude model and asks it to analyze the threat. It returns a JSON response containing a summary, likely attack type, recommended action, and extracted IP address.
 
+- Minor AI written codes: try-except
+
 ### webhook_embed():
 
 Builds and sends a formatted Discord embed message to a Discord Channel via Webhook URL. These message consist of security alerts or errors.
@@ -102,6 +104,8 @@ Builds and sends a formatted Discord embed message to a Discord Channel via Webh
 ### analyze_auth_log():
 
 Scans `auth.log` for keywords associated with known threat types (e.g. failed logins) and returns a threat object with its type, severity, and color if a match is found.
+
+- Minor AI written codes: except logic
 
 ### check_threshold_in_window():
 
@@ -113,8 +117,7 @@ Uses a sliding window algorithm to check whether a minimum number of events occu
 
 The main AWS Lambda handler that decodes and decompresses incoming CloudWatch log data, identifies suspicious events, groups them by threat type, and triggers Bedrock AI for analysis and Discord alerts when thresholds are meet.
 
-- Partially contain AI written codes:
-  - try-except logic, compress data, handle incoming data and alert trigger threshold
+- Partially contain AI written codes: try-except logic, compress data, handle incoming data and alert trigger threshold
 
 <hr>
 
