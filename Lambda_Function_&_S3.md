@@ -99,7 +99,7 @@ So far I only have one script to handle `auth-logs`. The script language I am fo
 
      
 
-## Learning Curve:
+## Learning Curves:
 
 Using AWS Lambda Function and S3 service was rather surprisingly easy to use. Regardless, I provided some issues I faced and what I've learned during the setup below.  
 
